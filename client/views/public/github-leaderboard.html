@@ -1,0 +1,15 @@
+<head>
+  <title>github-leaderboard</title>
+</head>
+
+<body>
+  <div>
+    {{#each users}}
+      {{> user}}
+    {{/each}}
+  </div>
+</body>
+
+<template name="user">
+  <p>{{name}} - {{deletions}}</p>
+</template>
